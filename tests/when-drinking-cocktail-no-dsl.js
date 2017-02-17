@@ -2,19 +2,15 @@
 
 var assert = require('chai').assert;
 var Visitor = require('../src/visitor');
-var CocktailBuilder = require('../tests/dsl/cocktail-builder');
+var Cocktail = require('../src/cocktail');
 
 suite('when drinking cocktail', function () {
     test('visitor becomes a bit more drunk', function () {
         let visitor = new Visitor();
-        let cocktail = new CocktailBuilder()
-            .withName("Rum & Cola")
-            .withAlcoholLevel(5)
-            .withVolume(250)
-            .please();
+        let cocktail = new Cocktail("Rum & Cola", 5, 250);
 
         visitor.drink(cocktail);
 
-        assert.equal(visitor.alcoholLevel, 0 + 5);
+        assert.equal(visitor.alcoholLevel, 5);
     });
 });
