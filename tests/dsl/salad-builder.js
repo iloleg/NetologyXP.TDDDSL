@@ -35,30 +35,30 @@ class SaladBuilder {
         return this;
     }
 
-    withCucumbers(tomato) {
+    withTomato(tomato) {
         this._tomato = tomato;
         return this;
     }
 
-    withCucumbers(onion) {
+    withOnion(onion) {
         this._onion = onion;
         return this;
     }
 
-    withCucumbers(oliveOil) {
+    withOliveOil(oliveOil) {
         this._oliveOil = oliveOil;
         return this;
     }
 
-    withCucumbers(vegetableOil) {
+    withVegetableOil(vegetableOil) {
         this._vegetableOil = vegetableOil;
         return this;
     }
-    withCucumbers(salt) {
+    withSalt(salt) {
         this._salt = salt;
         return this;
     }
-    withCucumbers(pepper) {
+    withPepper(pepper) {
         this._pepper = pepper;
         return this;
     }
