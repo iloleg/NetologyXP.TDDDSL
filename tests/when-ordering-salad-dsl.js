@@ -4,7 +4,7 @@
 "use strict";
 
 var assert = require('chai').assert;
-var SaladBuilder = require('../tests/dsl/salad-builder-builder');
+var SaladBuilder = require('../tests/dsl/salad-builder');
 
 suite('when ordering salad', function () {
     test('customer ordered a salad with chicken', function () {
