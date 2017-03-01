@@ -4,7 +4,7 @@
 "use strict";
 
 class Salad {
-    constructor(name, chicken, cucumbers, tomato, onion, oliveOil, vegetableOil, salt, pepper) {
+    constructor(name, chicken, cucumbers, tomato, onion, oliveOil, vegetableOil, salt, pepper ,price) {
         this._name = name;
         this._chicken = chicken;
         this._cucumbers = cucumbers;

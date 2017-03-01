@@ -8,14 +8,14 @@ var Salad = require('../../src/salad');
 class SaladBuilder {
     constructor() {
         this._name = "";
-        this._chicken = 20;
-        this._cucumbers = 10;
-        this._tomato = 10;
-        this._onion = 10;
-        this._oliveOil = 10;
-        this._vegetableOil = 10;
-        this._salt = 5;
-        this._pepper = 5;
+        this._chicken = 0;
+        this._cucumbers = 0;
+        this._tomato = 0;
+        this._onion = 0;
+        this._oliveOil = 0;
+        this._vegetableOil = 0;
+        this._salt = 0;
+        this._pepper = 0;
 
 
     }

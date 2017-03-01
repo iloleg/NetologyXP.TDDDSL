@@ -5,7 +5,7 @@ var Cocktail = require('../../src/cocktail');
 class CocktailBuilder {
     constructor() {
         this._name = "";
-        this._alcoholLevel = 0;
+        this._saladPrice = 0;
         this._volume = 0;
     }
 
@@ -15,7 +15,7 @@ class CocktailBuilder {
     }
 
     withAlcoholLevel(level) {
-        this._alcoholLevel = level;
+        this._saladPrice = level;
         return this;
     }
 
@@ -25,7 +25,7 @@ class CocktailBuilder {
     }
 
     please() {
-        return new Cocktail(this._name, this._alcoholLevel, 0);
+        return new Cocktail(this._name, this._saladPrice, 0);
     }
 }
 
