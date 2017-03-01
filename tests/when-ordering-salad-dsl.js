@@ -5,25 +5,44 @@
 
 var assert = require('chai').assert;
 var SaladBuilder = require('../tests/dsl/salad-builder');
+var SaladPrice = require('../src/salad-price');
 
 suite('when ordering salad witch chicken', function () {
+    let priceList = {
+        basePrice: 100,
+        addChicken: 200,
+        addCucumbers: 100,
+        addTomato: 100,
+        addOnion: 200,
+        addOliveOil: 100,
+        addVegetableOil: 200,
+        addSalt:100,
+        addPepper:100
+
+
+
+
+
+
+    };
+
     test('customer ordered a salad all include', function () {
 
         let salad = new SaladBuilder()
             .withName("Witch chicken")
-            .withChicken()
-            .withCucumbers()
-            .withTomato()
-            .withOnion()
-            .withOliveOil()
-            .withVegetableOil()
-            .withSalt()
-            .withPepper()
+            .withChicken(200)
+            .withCucumbers(20)
+            .withTomato(20)
+            .withOnion(10)
+            .withOliveOil(10)
+            .withVegetableOil(10)
+            .withSalt(5)
+            .withPepper(5)
             .please();
 
+       // var salatPrice = SaladPrice(priceList)
 
-
-        assert.equal(300);
+       // assert.equal(1100,salad);
     });
     test('customer ordered a salad with chicken, cucumbers,onion,OliveOil,Salt,Pepper ', function () {
 
