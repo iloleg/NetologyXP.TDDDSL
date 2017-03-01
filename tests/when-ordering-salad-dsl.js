@@ -8,23 +8,7 @@ var SaladBuilder = require('../tests/dsl/salad-builder');
 var SaladPrice = require('../src/salad-price');
 
 suite('when ordering salad witch chicken', function () {
-    let priceList = {
-        basePrice: 100,
-        addChicken: 200,
-        addCucumbers: 100,
-        addTomato: 100,
-        addOnion: 200,
-        addOliveOil: 100,
-        addVegetableOil: 200,
-        addSalt:100,
-        addPepper:100
 
-
-
-
-
-
-    };
 
     test('customer ordered a salad all include', function () {
 
@@ -40,9 +24,8 @@ suite('when ordering salad witch chicken', function () {
             .withPepper(5)
             .please();
 
-       // var salatPrice = SaladPrice(priceList)
-
-       // assert.equal(1100,salad);
+        SaladPrice.price(Salad);
+        assert.equal(SaladPrice.priceList, 0 + 280);
     });
     test('customer ordered a salad with chicken, cucumbers,onion,OliveOil,Salt,Pepper ', function () {
 
@@ -58,7 +41,8 @@ suite('when ordering salad witch chicken', function () {
 
 
 
-        assert.equal(300);
+        SaladPrice.price(Salad);
+        assert.equal(SaladPrice.priceList, 0 + 280);
     });
 
     test('customer ordered a salad with chicken, cucumbers, tomato,onion,VegetableOil,Salt,Pepper ', function () {
@@ -76,7 +60,8 @@ suite('when ordering salad witch chicken', function () {
 
 
 
-        assert.equal(300);
+        SaladPrice.price(Salad);
+        assert.equal(SaladPrice.priceList, 0 + 280);
     });
 });
 suite('when ordering salad', function () {
@@ -95,7 +80,8 @@ suite('when ordering salad', function () {
 
 
 
-        assert.equal(300);
+        SaladPrice.price(Salad);
+        assert.equal(SaladPrice.priceList, 0 + 280);
     });
     test('customer ordered a salad with cucumbers,onion,OliveOil,Salt,Pepper ', function () {
 
@@ -110,7 +96,8 @@ suite('when ordering salad', function () {
 
 
 
-        assert.equal(300);
+        SaladPrice.price(Salad);
+        assert.equal(SaladPrice.priceList, 0 + 280);
     });
 
     test('customer ordered a salad with cucumbers, tomato,onion,VegetableOil,Salt,Pepper ', function () {
@@ -127,6 +114,7 @@ suite('when ordering salad', function () {
 
 
 
-        assert.equal(300);
+        SaladPrice.price(Salad);
+        assert.equal(SaladPrice.priceList, 0 + 280);
     });
 });
