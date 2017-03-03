@@ -2,7 +2,7 @@
 
 ##в этом  коде
 
-
+```
     test('customer ordered a salad all include', function () {
 
         let salad = new SaladBuilder()
@@ -20,8 +20,8 @@
         SaladPrice.price(Salad);
         assert.equal(SaladPrice.priceList, 0 + 280);
     });
-
-
+ 
+```
 
 
   ## Мутные тести и слишком много ебектов в коде
